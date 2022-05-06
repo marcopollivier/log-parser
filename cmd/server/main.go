@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/marcopollivier/log-parser/cmd/config"
+	"github.com/marcopollivier/log-parser/infra/config"
 	"github.com/marcopollivier/log-parser/internal/stdin"
 )
 
