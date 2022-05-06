@@ -1,7 +1,6 @@
 package main
 
 import (
-	"io/ioutil"
 	"log"
 
 	"github.com/marcopollivier/log-parser/cmd/config"
@@ -11,13 +10,6 @@ import (
 func main() {
 	log.Print("Starting Application")
 
-	Init()
-
+	config.Init()
 	stdin.Init()
-}
-
-func Init() {
-	if config := config.Get(); !config.LoggingEnable {
-		log.SetOutput(ioutil.Discard)
-	}
 }
