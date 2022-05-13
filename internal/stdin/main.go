@@ -12,7 +12,7 @@ func Init() {
 
 	for scanner.Scan() {
 
-		fmt.Println(string((scanner.Bytes())))
+		fmt.Println(string(scanner.Bytes()))
 
 	}
 
